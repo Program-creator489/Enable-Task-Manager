@@ -24,7 +24,9 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
 	CreateThread(0, 0, Enable, 0, 0, 0);
 
-	("system TaskMgr");
+	Sleep(1000);
+
+	system("start TaskMgr");
 
 
 		}
