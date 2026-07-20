@@ -20,15 +20,27 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 			ExitProcess(0);
 		}
 		else
-		{
 
-	CreateThread(0, 0, Enable, 0, 0, 0);
+		CreateThread(0, 0, Enable, 0, 0, 0);
 
-	Sleep(1000);
+		Sleep(1000);
 
-	system("start TaskMgr");
+		system("start TaskMgr");
 
+		Sleep(1000);
 
-		}
+		MessageBox(
+
+			NULL,
+
+			"Your Task Manager has been Enabled.",
+
+			"Enable-TaskManager.exe",
+
+			MB_OK | MB_ICONASTERISK
+
+		);
+
 	}
+
 }
